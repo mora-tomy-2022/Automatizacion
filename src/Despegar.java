@@ -15,7 +15,7 @@ public class Despegar {
 	
 	public void ValidarBusquedaWikipedia() throws Exception {  System.setProperty("webdriver.gecko.driver", "C:\\Driver\\geckodriver.exe"); 
 	WebDriver driver = new FirefoxDriver();
-	driver.get("https://www.despegar.com.ar/");
+	driver.get("https://www.despegar.com.ar/"); 
 	
 	driver.manage().window().maximize(); //maximiza el navegador
 
@@ -64,9 +64,9 @@ public class Despegar {
 	seleccionarAdultos.click(); 
 	Thread.sleep(3000); 
 	
-	List<WebElement> cantidadNiños = driver.findElements(By.xpath("//div[@class='sbox5-floating-tooltip sbox5-floating-tooltip-opened']//div[@class='stepper__room']//div[@class='stepper__room__row']//div[@class='sbox5-3-steppers -md']/button[@class='steppers-icon-right stepper__icon']")); 
-	WebElement seleccionarNiños = cantidadNiños.get(1);
-	seleccionarNiños.click(); 
+	List<WebElement> cantidadNinos = driver.findElements(By.xpath("//div[@class='sbox5-floating-tooltip sbox5-floating-tooltip-opened']//div[@class='stepper__room']//div[@class='stepper__room__row']//div[@class='sbox5-3-steppers -md']/button[@class='steppers-icon-right stepper__icon']")); 
+	WebElement seleccionarNinos = cantidadNinos.get(1);
+	seleccionarNinos.click(); 
 	
 	WebElement seleccionarEdad = driver.findElement(By.xpath("//div[@class='sbox5-floating-tooltip sbox5-floating-tooltip-opened']//div[@class='stepper__room__row']/div['select__row__options__container']//div[@class='select-container']"));
 	seleccionarEdad.click();
