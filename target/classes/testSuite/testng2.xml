@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name= "SuiteWiki"> 
+	<parameter name="Navegador" value="CHROME"></parameter>
+  <test thread-count= "5" name="TestWiki">
+  	<classes>
+  		<class name="TestWiki"></class>
+  	</classes>
+  </test>
+</suite>
+<suite name="SuiteDespegar">
+	<parameter name="Navegador" value="FIREFOX"></parameter>
+  <test thread-count= "5" name="TestDespegar">
+  	<classes>
+  		<class name="TestDespegar"></class>
+  	</classes>
+  </test>
+</suite>
+
+
+

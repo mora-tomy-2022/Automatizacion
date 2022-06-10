@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name= "Tests Cases"> 
+	<parameter name="Navegador" value="FIREFOX"/>
+  <test verbose= "2" preserve-order="true" name="Test Suite">
+  	<groups>
+  		<run>
+  			<include name= "Validar busqueda en Wikipedia"/>
+  			<include name= "Registrar un alojamiento para diferentes lugares"/>
+  			
+  			<exclude name= "Navegar entre los difentes botones"/>
+  		</run>
+  	</groups>
+  	<classes>
+  		<class name="TestWiki"/>
+  		<class name="TestDespegar"/>
+  	</classes>
+  </test>
+</suite>
+
+
+
+
